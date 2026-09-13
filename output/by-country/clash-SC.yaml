@@ -19,15 +19,15 @@ proxies:
   grpc-opts:
     grpc-service-name: TunService
 - name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  server: 185.79.138.71
+  server: 138.124.0.168
   port: 8080
   udp: true
   type: hysteria2
   password: h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT
   sni: hopp-legend-se.roxa.org
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
-  server: 156.226.168.221
+  server: hk3n.wxgqlfx.vip
   port: 35193
   udp: true
   type: vless
