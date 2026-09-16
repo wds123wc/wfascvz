@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - xiaohe
-  server: 172.66.47.132
+  server: 172.66.44.124
   port: 443
   udp: true
   type: vless

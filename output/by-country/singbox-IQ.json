@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "172.66.47.132",
+      "server": "172.66.44.124",
       "server_port": 443,
       "uuid": "b2f2f9f2-1864-48ea-839b-22815faff1f1",
       "tls": {
