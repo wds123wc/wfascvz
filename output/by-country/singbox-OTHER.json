@@ -4,21 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "172.67.134.170",
+      "type": "trojan",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "104.18.8.83",
       "server_port": 443,
-      "uuid": "50414e45-4c5f-5a45-5553-635698a6bb9c",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "jdzit4e4urks.xwzohsebujps.workers.dev",
-        "insecure": false
+        "server_name": "www.calmlunch.com",
+        "insecure": false,
+        "alpn": [
+          "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
+        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/stream/PANEL_ZEUS/635698a6bb9c/loc-0",
+        "path": "/assignment",
         "headers": {
-          "Host": "jdzit4e4urks.xwzohsebujps.workers.dev"
+          "Host": "www.calmlunch.com"
         }
       }
     },
@@ -27,14 +30,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
