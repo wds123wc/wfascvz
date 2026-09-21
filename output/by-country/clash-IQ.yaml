@@ -5,20 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - xiaohe
-  server: 104.21.96.1
+  server: 104.21.14.100
   port: 443
   udp: true
   type: vless
-  uuid: 0836463b-214f-4af6-aa85-85a56a62388e
+  uuid: 7fc7f295-b80e-4235-bb17-61e3ddc0744a
   tls: true
-  servername: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
+  servername: 4zgccbcb10pqyibnwmm4nvznj4.royaehman5.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512
+    path: /vl/dUpDYuQTXxF5X83infdA74?ed=2560
     headers:
-      Host: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
+      Host: 4zgccbcb10pqyibnwmm4nvznj4.royaehman5.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select

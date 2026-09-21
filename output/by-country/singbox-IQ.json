@@ -6,13 +6,16 @@
     {
       "type": "vless",
       "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "104.21.96.1",
+      "server": "104.21.14.100",
       "server_port": 443,
-      "uuid": "0836463b-214f-4af6-aa85-85a56a62388e",
+      "uuid": "7fc7f295-b80e-4235-bb17-61e3ddc0744a",
       "tls": {
         "enabled": true,
-        "server_name": "d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev",
+        "server_name": "4zgccbcb10pqyibnwmm4nvznj4.royaehman5.workers.dev",
         "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -20,9 +23,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI?ed=512",
+        "path": "/vl/dUpDYuQTXxF5X83infdA74?ed=2560",
         "headers": {
-          "Host": "d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev"
+          "Host": "4zgccbcb10pqyibnwmm4nvznj4.royaehman5.workers.dev"
         }
       }
     },
