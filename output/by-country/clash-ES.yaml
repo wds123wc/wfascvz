@@ -5,20 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - xiaohe
-  server: 172.67.161.104
-  port: 443
+  server: 108.181.121.226
+  port: 8388
   udp: true
-  type: vless
-  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
-  tls: true
-  servername: c7dabe95.proxy-978.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c7dabe95.proxy-978.pages.dev
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
 - name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
   server: 140.174.184.5
   port: 8388
@@ -35,55 +27,27 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
-  server: 212.227.235.66
-  port: 2053
+  server: 193.238.154.5
+  port: 443
   udp: true
   type: vless
-  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
+  uuid: e0b9fb0f-1bbd-478b-9580-c2294778338b
   tls: true
-  reality-opts:
-    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
-    short-id: 29e8dcd2b37aaa7f
-  servername: www.apple.com
+  servername: assets-es.pleiades.codes
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
 - name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
-  server: 108.181.121.226
-  port: 8388
+  server: 185.174.137.172
+  port: 8446
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
+  type: hysteria2
+  password: e9dc02d400b67c727aca1620
+  sni: 185.174.137.172
+  skip-cert-verify: true
 - name: 🇪🇸 西班牙 (Spain) 06 - xiaohe
-  server: 188.114.98.134
-  port: 443
-  udp: true
-  type: vless
-  uuid: ba49d874-fe02-465d-82d3-ed981dc7694f
-  tls: true
-  servername: o94yv7LiF0-AnxIsd9EFehVvs7mXn6bh.z-UlE-ikA-d-e-nE-k-E.WorkeRs.dEv
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev
-- name: 🇪🇸 西班牙 (Spain) 07 - xiaohe
-  server: 104.21.19.225
-  port: 443
-  udp: true
-  type: vless
-  uuid: fa9ec1a9-6c24-4be2-9472-d1e2592b45b4
-  tls: true
-  servername: G84-nee38RYD6hElYZ6Z9qW1rm1BdL1.FornEwirAn-1056.WorkerS.dEv
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/pmsM6vhny85OmnvYbXIpf1l
-    headers:
-      Host: g84-nee38ryd6helyz6z9qw1rm1bdl1.fornewiran-1056.workers.dev
-- name: 🇪🇸 西班牙 (Spain) 08 - xiaohe
   server: 66.163.118.73
   port: 443
   udp: true
@@ -110,8 +74,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 04 - xiaohe
   - 🇪🇸 西班牙 (Spain) 05 - xiaohe
   - 🇪🇸 西班牙 (Spain) 06 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 07 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -123,7 +85,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 04 - xiaohe
   - 🇪🇸 西班牙 (Spain) 05 - xiaohe
   - 🇪🇸 西班牙 (Spain) 06 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 07 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 08 - xiaohe
 rules:
 - MATCH,PROXIES
