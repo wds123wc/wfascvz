@@ -4,38 +4,53 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  server: hinet1.2yly.com
-  port: 24215
+- name: 🇨🇦 加拿大 (Canada) 01 (家宽) - xiaohe
+  server: 188.114.97.6
+  port: 8080
   udp: true
   type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 02 (家宽) - xiaohe
-  server: s3.huhiuh.space
-  port: 18642
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: ?ed=2560
+    headers:
+      Host: a0hbm.jvb1.28f.hh.vavava.kdns.fr
+- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
+  server: 178.83.46.216
+  port: 2053
   udp: true
-  type: hysteria2
-  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: www.bing.com
-  skip-cert-verify: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇨🇦 加拿大 (Canada) 03 (家宽) - xiaohe
+  server: 104.21.12.21
+  port: 443
+  udp: true
+  type: vless
+  uuid: 73796e63-0000-4000-8000-000000000000
+  tls: true
+  servername: nahan-core.fatitelegram.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: nahan-core.fatitelegram.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 02 (家宽) - xiaohe
+  - 🇨🇦 加拿大 (Canada) 01 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
+  - 🇨🇦 加拿大 (Canada) 03 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 02 (家宽) - xiaohe
+  - 🇨🇦 加拿大 (Canada) 01 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe
+  - 🇨🇦 加拿大 (Canada) 03 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
