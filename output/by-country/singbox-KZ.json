@@ -4,17 +4,21 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
-      "server": "hi.northcluster.info",
-      "server_port": 52300,
-      "uuid": "6e571484-4166-4699-8f58-b34a1823691f",
-      "security": "auto",
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
+      "server": "89.218.15.90",
+      "server_port": 10002,
+      "uuid": "392fcc7e-b995-11f1-a6b7-1b2272a86bd5",
+      "tls": {
+        "enabled": true,
+        "server_name": "kz1.vpnjantit.com",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
-        "path": "/video",
+        "path": "/vpnjantit",
         "headers": {
-          "Host": "hi.northcluster.info"
+          "Host": "kz1.vpnjantit.com"
         }
       }
     },
@@ -23,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

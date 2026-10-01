@@ -5,20 +5,27 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "63.141.128.22",
-      "server_port": 443,
-      "uuid": "b8b01773-36b1-4b49-9bd0-6249f52345b4",
+      "tag": "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe",
+      "server": "89.125.96.80",
+      "server_port": 2053,
+      "uuid": "6c713691-3ca2-0008-ad25-113d1bed6b03",
       "tls": {
         "enabled": true,
-        "server_name": "MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv",
-        "insecure": false
+        "server_name": "wss.zazazuza.ru",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "path": "/vpn-wss/fluxor/59011/",
         "headers": {
-          "Host": "MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv"
+          "Host": "wss.zazazuza.ru"
         }
       }
     },
@@ -27,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - xiaohe"
+        "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - xiaohe"
+        "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
