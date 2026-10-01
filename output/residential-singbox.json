@@ -4,46 +4,41 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 01 (家宽) - xiaohe",
-      "server": "188.114.97.6",
-      "server_port": 8080,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "?ed=2560",
-        "headers": {
-          "Host": "a0hbm.jvb1.28f.hh.vavava.kdns.fr"
-        }
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
+      "server": "83f84903-tmkao0-tqsp0c-1imi4.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "40fb1315-191a-11ed-b0ca-f23c91cfbbc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "83f84903-tmkao0-tqsp0c-1imi4.hk3.hyhuawei.com",
+        "insecure": true
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe",
-      "server": "178.83.46.216",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 03 (家宽) - xiaohe",
-      "server": "104.21.12.21",
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
+      "server": "96b301c8-tmkao0-u4zg37-1jcwu.nw4.hyhuawei.com",
       "server_port": 443,
-      "uuid": "73796e63-0000-4000-8000-000000000000",
+      "password": "f93486ce-cc84-11ed-9e98-f23c913c8d2b",
       "tls": {
         "enabled": true,
-        "server_name": "nahan-core.fatitelegram.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+        "server_name": "96b301c8-tmkao0-u4zg37-1jcwu.nw4.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
+      "server": "hi.northcluster.info",
+      "server_port": 52300,
+      "uuid": "6e571484-4166-4699-8f58-b34a1823691f",
+      "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/sync",
+        "path": "/video",
         "headers": {
-          "Host": "nahan-core.fatitelegram.workers.dev"
+          "Host": "hi.northcluster.info"
         }
       }
     },
@@ -52,18 +47,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇦 加拿大 (Canada) 01 (家宽) - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe",
-        "🇨🇦 加拿大 (Canada) 03 (家宽) - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇦 加拿大 (Canada) 01 (家宽) - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe",
-        "🇨🇦 加拿大 (Canada) 03 (家宽) - xiaohe"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
