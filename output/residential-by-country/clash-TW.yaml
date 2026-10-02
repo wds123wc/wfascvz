@@ -26,6 +26,8 @@ proxies:
   network: ws
   ws-opts:
     path: /video
+    headers:
+      Host: hi.northcluster.info
 proxy-groups:
 - name: PROXIES
   type: select
