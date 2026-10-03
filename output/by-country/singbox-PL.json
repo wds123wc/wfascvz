@@ -35,69 +35,50 @@
       "tls": {
         "enabled": true,
         "server_name": "api-test-udp-traffic.kaneki.cfd",
-        "insecure": true
+        "insecure": false
       }
     },
     {
       "type": "trojan",
       "tag": "🇵🇱 波兰 (Poland) 03 - xiaohe",
-      "server": "pl.tronsg.com",
-      "server_port": 443,
-      "password": "Trojan@82164024",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl.tronsg.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 04 - xiaohe",
-      "server": "95.85.227.241",
-      "server_port": 443,
-      "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "proxy3d.h1guro.ovh",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "dlX12huNd8CRSGgKGCwi1GiCLFtmRxY9b7ywKCIyWXo",
-          "short_id": "25934afbedc65791"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 05 - xiaohe",
       "server": "202.78.163.237",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
         "enabled": true,
         "server_name": "cheerful-swan.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇵🇱 波兰 (Poland) 06 - xiaohe",
-      "server": "mix.pantera-radio.ru",
-      "server_port": 443,
-      "password": "0a11d3b4-682c-4bfb-afb0-820b8285cb4b",
-      "tls": {
-        "enabled": true,
-        "server_name": "mix.pantera-radio.ru",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 07 - xiaohe",
+      "tag": "🇵🇱 波兰 (Poland) 04 - xiaohe",
+      "server": "70.34.255.101",
+      "server_port": 80,
+      "uuid": "a889262f-5fe3-4c93-9aaa-3721318dd389",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇵🇱 波兰 (Poland) 05 - xiaohe",
+      "server": "188.114.96.19",
+      "server_port": 80,
+      "uuid": "aed88e79-5762-4d2f-86fa-f438f32a7654",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 06 - xiaohe",
       "server": "83.168.95.145",
       "server_port": 443,
       "uuid": "82f37352-85e5-49bb-9edc-a80997065659",
@@ -117,17 +98,23 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 08 - xiaohe",
-      "server": "188.114.96.19",
-      "server_port": 80,
-      "uuid": "aed88e79-5762-4d2f-86fa-f438f32a7654",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 07 - xiaohe",
+      "server": "95.85.227.241",
+      "server_port": 443,
+      "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "proxy3d.h1guro.ovh",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "dlX12huNd8CRSGgKGCwi1GiCLFtmRxY9b7ywKCIyWXo",
+          "short_id": "25934afbedc65791"
         }
       }
     },
@@ -142,8 +129,7 @@
         "🇵🇱 波兰 (Poland) 04 - xiaohe",
         "🇵🇱 波兰 (Poland) 05 - xiaohe",
         "🇵🇱 波兰 (Poland) 06 - xiaohe",
-        "🇵🇱 波兰 (Poland) 07 - xiaohe",
-        "🇵🇱 波兰 (Poland) 08 - xiaohe"
+        "🇵🇱 波兰 (Poland) 07 - xiaohe"
       ]
     },
     {
@@ -156,8 +142,7 @@
         "🇵🇱 波兰 (Poland) 04 - xiaohe",
         "🇵🇱 波兰 (Poland) 05 - xiaohe",
         "🇵🇱 波兰 (Poland) 06 - xiaohe",
-        "🇵🇱 波兰 (Poland) 07 - xiaohe",
-        "🇵🇱 波兰 (Poland) 08 - xiaohe"
+        "🇵🇱 波兰 (Poland) 07 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
