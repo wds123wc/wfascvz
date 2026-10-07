@@ -5,30 +5,41 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 80.211.27.249
+  server: 172.64.155.209
   port: 443
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf
   tls: true
-  servername: fzo5i.ir46.90k.hh.ov0.kdns.fr
+  servername: ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /glasspanel/guest000_0_5de14443985f/
+    path: /eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
     headers:
-      Host: fzo5i.ir46.90k.hh.ov0.kdns.fr
+      Host: ancient-heart-60c5.dpccgizieb.workers.dev
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
+  server: 46.8.100.93
+  port: 443
+  udp: true
+  type: trojan
+  password: WFer-5gN21nfHbVB2N8s71Z74EPUfzVj
+  sni: nl.zhabulik.ru
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 02 - xiaohe
 rules:
 - MATCH,PROXIES
