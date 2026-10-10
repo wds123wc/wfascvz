@@ -13,12 +13,20 @@ proxies:
   sni: vps155-edge.kermemehori.ru
   skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: 185.103.110.66
-  port: 18280
+  server: 87.228.92.114
+  port: 25481
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  type: vless
+  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
+  tls: true
+  reality-opts:
+    public-key: mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E
+    short-id: 3b84fc70657725af
+  servername: www.bing.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 8cb5baa18cd7
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 170.168.4.59
   port: 17170
@@ -32,19 +40,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: trail-grpc
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 87.242.94.135
-  port: 8443
-  udp: true
-  type: vless
-  uuid: f23bc4f1-cc71-4003-ae6c-d6abe21d8191
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: y168bU8zcZWat8CcRYRnjCz_L_-OnGvTa4ZZsapmVTQ
-    short-id: 55e5751182be6e90
-  servername: passport.yandex.ru
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,7 +48,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,6 +56,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
 rules:
 - MATCH,PROXIES
