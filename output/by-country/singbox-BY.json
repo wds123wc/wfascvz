@@ -4,20 +4,17 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "or3.sfacg.uk",
-      "server_port": 2083,
-      "uuid": "ac251237-576f-40c8-a543-554960c958b1",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "or3.sfacg.uk",
-        "insecure": false
-      },
+      "type": "vless",
+      "tag": "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe",
+      "server": "95.128.71.79",
+      "server_port": 14430,
+      "uuid": "8cef7621-c6f0-486e-b51d-59c30c5b0b25",
       "transport": {
         "type": "ws",
-        "path": "/or3"
+        "path": "/vless",
+        "headers": {
+          "Host": "95.128.71.79"
+        }
       }
     },
     {
@@ -25,14 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
