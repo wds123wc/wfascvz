@@ -4,18 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "8.47.69.0",
+      "server": "104.21.6.186",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
-        "server_name": "www.pleadcourt.org",
+        "server_name": "jp3.yohototo.top",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -23,31 +20,28 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/tyxyws",
         "headers": {
-          "Host": "www.pleadcourt.org"
+          "Host": "jp3.yohototo.top"
         }
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🌐 其他地区 (Other) 02 - xiaohe",
-      "server": "8.47.69.0",
+      "server": "104.21.6.186",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
-        "server_name": "www.pleadcourt.org",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ]
+        "server_name": "jp3.yohototo.top",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/tyxyws",
         "headers": {
-          "Host": "www.pleadcourt.org"
+          "Host": "jp3.yohototo.top"
         }
       }
     },
