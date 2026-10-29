@@ -4,16 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇨🇭 瑞士 (Switzerland) 01 - xiaohe",
-      "server": "140.238.213.114",
-      "server_port": 50160,
-      "password": "84a506ca5aca505696a454d828420b3f",
-      "tls": {
-        "enabled": true,
-        "server_name": "140.238.213.114",
-        "insecure": true
-      }
+      "server": "132.243.175.144",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
     },
     {
       "type": "vless",
@@ -26,7 +22,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -47,7 +43,7 @@
         "server_name": "twitch.tv",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -57,13 +53,52 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04 - xiaohe",
+      "server": "208.69.78.19",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.yourultimateprofessionalcareerhub.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇨🇭 瑞士 (Switzerland) 05 - xiaohe",
+      "server": "208.69.78.60",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.yourultimateprofessionalcareerhub.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 06 - xiaohe",
+      "server": "149.33.15.213",
+      "server_port": 443,
+      "uuid": "054362fb-e485-4a3f-9568-4c5b0f60e074",
+      "tls": {
+        "enabled": true,
+        "server_name": "swz.proxyplankton.ru",
+        "insecure": false
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇭 瑞士 (Switzerland) 01 - xiaohe",
         "🇨🇭 瑞士 (Switzerland) 02 - xiaohe",
-        "🇨🇭 瑞士 (Switzerland) 03 - xiaohe"
+        "🇨🇭 瑞士 (Switzerland) 03 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 04 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 05 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 06 - xiaohe"
       ]
     },
     {
@@ -72,7 +107,10 @@
       "outbounds": [
         "🇨🇭 瑞士 (Switzerland) 01 - xiaohe",
         "🇨🇭 瑞士 (Switzerland) 02 - xiaohe",
-        "🇨🇭 瑞士 (Switzerland) 03 - xiaohe"
+        "🇨🇭 瑞士 (Switzerland) 03 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 04 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 05 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
