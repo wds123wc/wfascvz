@@ -34,7 +34,7 @@ proxies:
   type: trojan
   password: 5t6i121em5lkmsmk
   sni: in002.zestapp778.com
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇮🇳 印度 (India) 04 - xiaohe
   server: 122.176.216.52
   port: 443

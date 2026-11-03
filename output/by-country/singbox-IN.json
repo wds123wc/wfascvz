@@ -46,7 +46,7 @@
       "tls": {
         "enabled": true,
         "server_name": "in002.zestapp778.com",
-        "insecure": false
+        "insecure": true
       }
     },
     {
