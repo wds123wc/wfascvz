@@ -4,23 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
-      "server": "ee.subv.ru",
-      "server_port": 443,
-      "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
-      "flow": "xtls-rprx-vision",
+      "server": "208.103.161.16",
+      "server_port": 2096,
+      "password": "hWsj5AwIRPF8",
       "tls": {
         "enabled": true,
-        "server_name": "dvizhok.su",
+        "server_name": "rayAnconfIg3-Bhl0ai7j-t2.raYan-coNfig-3.woRKers.dEV",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
-          "short_id": "428ef87fd47a3a32"
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "rayAnconfIg3-Bhl0ai7j-t2.raYan-coNfig-3.woRKers.dEV"
         }
       }
     },
