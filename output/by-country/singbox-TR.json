@@ -30,7 +30,7 @@
     {
       "type": "trojan",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
-      "server": "157.254.38.210",
+      "server": "sclass-b1.catcat321.com",
       "server_port": 20027,
       "password": "d7563108-615c-4338-a7bd-77f359869a4a",
       "tls": {
@@ -40,20 +40,8 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
-      "server": "sclass-b1.catcat321.com",
-      "server_port": 20028,
-      "password": "d7563108-615c-4338-a7bd-77f359869a4a",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk.catxstar.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - xiaohe",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
       "server": "188.225.37.43",
       "server_port": 443,
       "uuid": "4cabcd59-a405-4c00-96f5-03507e1e28fa",
@@ -72,6 +60,18 @@
         "headers": {
           "Host": "torvani.cyou"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - xiaohe",
+      "server": "sclass-b1.catcat321.com",
+      "server_port": 20028,
+      "password": "d7563108-615c-4338-a7bd-77f359869a4a",
+      "tls": {
+        "enabled": true,
+        "server_name": "hk.catxstar.com",
+        "insecure": true
       }
     },
     {
