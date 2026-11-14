@@ -36,12 +36,12 @@ proxies:
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
 - name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  server: 62.182.193.228
+  server: 70.34.212.124
   port: 8388
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2e555e46dbc421452416834962fd014f
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
 proxy-groups:
 - name: PROXIES
   type: select
