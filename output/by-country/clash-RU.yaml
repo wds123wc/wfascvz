@@ -5,11 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 147.45.47.101
+  server: 37.235.247.81
   port: 8443
   udp: true
   type: vless
-  uuid: 27f26dee-9cf1-4cca-93f8-9ac23d311408
+  uuid: 2ae0670d-0bdf-409e-9a55-4e970252d378
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -46,7 +46,7 @@ proxies:
   sni: srv-17e124.21freedom.net
   skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  server: 201.51.12.98
+  server: vps3.nemnogogo.com
   port: 443
   udp: true
   type: vless
@@ -54,38 +54,37 @@ proxies:
   tls: true
   servername: vps3.nemnogogo.com
   skip-cert-verify: false
-  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: mobile.api.Event
 - name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  server: 185.178.208.167
-  port: 443
-  udp: true
-  type: vless
-  uuid: ffb2c504-2c6c-49f3-b4bd-9fd3ff6ce454
-  tls: true
-  servername: unlik.club
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /static/telemetry/3c9aaef00005/
-    headers:
-      Host: tochkacdn.top
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  server: xssite.webredirect.org
+  server: 147.45.175.81
   port: 443
   udp: true
   type: vless
   uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
   tls: true
-  servername: xssite.webredirect.org
+  servername: xsru2.freeddns.org
   skip-cert-verify: false
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-ru
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /wsru
+    headers:
+      Host: xsru2.freeddns.org
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
+  server: mimowhat.online
+  port: 443
+  udp: true
+  type: vless
+  uuid: 37fc45b0-be4d-4920-a0f7-7389e406f5f3
+  tls: true
+  servername: mimowhat.online
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /content/session/24143d1e15019b9c79a3b463/
 - name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
   server: 136.148.83.69
   port: 443
@@ -96,19 +95,6 @@ proxies:
   servername: szqbx-ru-77dc.my-fade.cloud
   skip-cert-verify: false
   client-fingerprint: qq
-- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
-  server: 147.45.175.81
-  port: 443
-  udp: true
-  type: vless
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  tls: true
-  servername: xssite.webredirect.org
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-ru
 proxy-groups:
 - name: PROXIES
   type: select
@@ -122,7 +108,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -136,6 +121,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
 rules:
 - MATCH,PROXIES
