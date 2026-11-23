@@ -6,27 +6,21 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "chatgpt.com",
-      "server_port": 443,
-      "uuid": "c2425034-91ef-44bf-9fd4-f2be9c1e989a",
+      "server": "194.135.34.118",
+      "server_port": 8443,
+      "uuid": "020f7f86-a559-4366-8d2d-c6f81d6bbe5f",
       "tls": {
         "enabled": true,
-        "server_name": "sinavm3.soft10.ir",
+        "server_name": "web.hosttcp.fun",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/SiNAVM-SiNAVM-SiNAVM-SiNAVM",
-        "headers": {
-          "Host": "sinavm3.soft10.ir"
-        }
+        "path": "/api/v4/media/session"
       }
     },
     {
