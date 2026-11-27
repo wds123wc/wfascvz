@@ -4,32 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: chatgpt.com
-  port: 443
+- name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
+  server: 213.183.45.23
+  port: 8450
   udp: true
   type: vless
-  uuid: 55b3fd10-3658-40a2-8951-ec90932d1d30
+  uuid: eb62cabf-5901-403a-aa0c-b1d9ed1b346d
   tls: true
-  servername: sinavm2.soft10.ir
+  servername: fonts.plumstatic.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
-    headers:
-      Host: sinavm2.soft10.ir
+    path: /ws
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
 rules:
 - MATCH,PROXIES
